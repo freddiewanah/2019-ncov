@@ -2,7 +2,7 @@ import React from 'react';
 
 const DiscussionBoard = () => {
   return(
-    <div>
+    <div className="ui container">
       <div id="disqus_thread"></div>
       <script>
       {(function() { // DON'T EDIT BELOW THIS LINE
