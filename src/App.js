@@ -157,7 +157,7 @@ function HistoryGraph({ countryData }) {
       animationEnabled: true,
       height: 260,
       title: {
-        text: "Australia Covid-19 New Cases vs Deaths Chart (last two weeks)",
+        text: "Australia Covid-19 New Cases vs Deaths Chart (last 2 weeks)",
         fontSize: 20
       },
       legend: {
