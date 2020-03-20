@@ -6,7 +6,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - prod
+      - dev
   schedule:
   - cron:  '*/5 * * * *'
 
@@ -30,5 +30,7 @@ jobs:
 #      run: node scripts/build-origin.js
     - name: npm run build
       run: npm run build
-    - name: deploy to master branch
-      run: npm run deploy
+    - name: npm run test
+      run: npm run test
+    # - name: deploy to master branch
+    #   run: npm run deploy
