@@ -29,6 +29,10 @@ jobs:
 #    - name: build data
 #      run: node scripts/build-origin.js
     - name: npm run build
-      run: npm run build
+      run: npm run build&&cp config/google3413bf25c03a27c3.html build/
     - name: deploy to master branch
-      run: npm run deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
