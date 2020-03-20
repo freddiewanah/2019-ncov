@@ -22,6 +22,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import Grid from "@material-ui/core/Grid";
 import NewsTimeline from "./NewsTimeline";
+import DiscussionBoard from './DiscussionBoard';
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 dayjs.extend(relativeTime);
@@ -620,6 +621,7 @@ function App() {
             <Fallback />
           </Grid>
         </Grid>
+        <DiscussionBoard/>
       </div>
     );
   } else {
