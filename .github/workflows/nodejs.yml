@@ -7,8 +7,8 @@ on:
   push:
     branches:
       - prod
-  schedule:
-  - cron:  '*/5 * * * *'
+#  schedule:
+#  - cron:  '*/5 * * * *'
 
 jobs:
   build-and-deploy:
