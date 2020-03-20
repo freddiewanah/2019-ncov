@@ -32,11 +32,12 @@ jobs:
       env:
         REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
       run: npm run build&&cp config/google3413bf25c03a27c3.html build/
-    - name: deploy to master branch
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      env:
-        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: master # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
+#    - name: deploy to master branch
+#      uses: JamesIves/github-pages-deploy-action@releases/v3
+#      env:
+#        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
+#      with:
+#        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#        BRANCH: master # The branch the action should deploy to.
+#        FOLDER: build # The folder the action should deploy.
+
