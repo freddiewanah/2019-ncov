@@ -34,7 +34,7 @@ function downloadData(dataUrl, writePath) {
             }
 
             dataString = JSON.stringify(formattedData)
-            fs.writeFile('../src/data/stateCaseData.json', dataString, function (err) {
+            fs.writeFile('src/data/stateCaseData.json', dataString, function (err) {
                 if (err) throw err;
                 console.log('complete');
             });
