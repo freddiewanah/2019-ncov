@@ -25,6 +25,8 @@ import Grid from "@material-ui/core/Grid";
 import NewsTimeline from "./NewsTimeline";
 
 import stateCaseData from "./data/stateCaseData";
+import DiscussionBoard from './DiscussionBoard';
+import Fallback from './Fallback';
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 dayjs.extend(relativeTime);
@@ -478,37 +480,6 @@ function Stat({
     );
 }
 
-function Fallback() {
-    return (
-        <div className="fallback">
-            <div>Template credits to: shfshanyue</div>
-
-            <div>
-                Our GitHub:{" "}
-                <a href="https://github.com/covid-19-au/covid-19-au.github.io">
-                    covid-19-au
-                </a>
-            </div>
-            <div>
-                This site is developed by a{" "}
-                <a href="https://github.com/covid-19-au/covid-19-au.github.io/blob/dev/README.md">
-                    volunteer team
-                </a>{" "}
-                from the Faculty of IT, Monash University, for non-commercial use only.
-            </div>
-            <div>
-                <a href="https://www.webfreecounter.com/" target="_blank">
-                    <img
-                        src="https://www.webfreecounter.com/hit.php?id=gevkadfx&nd=6&style=1"
-                        border="0"
-                        alt="hit counter"
-                    />
-                </a>
-            </div>
-        </div>
-    );
-}
-
 function Area({ area, onChange, data }) {
     let totalRecovered = 0;
     for (let i = 0; i < data.length; i++) {
@@ -743,6 +714,7 @@ function App() {
                     {/*</Grid>*/}
 
                     <Grid item xs={12}>
+                        <DiscussionBoard/>
                         <Fallback />
                     </Grid>
                 </Grid>
