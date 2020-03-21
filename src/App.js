@@ -23,6 +23,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Grid from "@material-ui/core/Grid";
 import NewsTimeline from "./NewsTimeline";
 import DiscussionBoard from './DiscussionBoard';
+import Fallback from './Fallback';
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 dayjs.extend(relativeTime);
@@ -376,42 +377,6 @@ function Stat({
   );
 }
 
-function Fallback() {
-  return (
-    <div className="fallback">
-      <div>
-        Forked From:{" "}
-        <a href="https://github.com/shfshanyue/2019-ncov">
-          shfshanyue/2019-ncov
-        </a>
-      </div>
-
-      <div>
-        Our GitHub:{" "}
-        <a href="https://github.com/covid-19-au/covid-19-au.github.io">
-          covid-19-au
-        </a>
-      </div>
-      <div>
-        This site is developed by a{" "}
-        <a href="https://github.com/covid-19-au/covid-19-au.github.io/blob/dev/README.md">
-          volunteer team
-        </a>{" "}
-        from Faculty of IT, Monash University for non-commercial use only.
-      </div>
-      <div>
-        <a href="https://www.webfreecounter.com/" target="_blank">
-          <img
-            src="https://www.webfreecounter.com/hit.php?id=gevkadfx&nd=6&style=1"
-            border="0"
-            alt="hit counter"
-          />
-        </a>
-      </div>
-    </div>
-  );
-}
-
 function Area({ area, onChange, data }) {
   const renderArea = () => {
     let latest =
@@ -546,7 +511,7 @@ function App() {
   const overall = province ? province : all;
   if (myData) {
     return (
-      <div>
+      <div className="ui container">
         <Grid container spacing={gspace} justify="center" wrap="wrap">
           <Grid item xs={12}>
             <Header province={province} />
@@ -617,16 +582,13 @@ function App() {
           <Grid item xs={12}>
             <ExposureSites />
           </Grid>
-          <Grid item xs={12}>
-            <Fallback />
-          </Grid>
         </Grid>
         <DiscussionBoard/>
+        <Fallback />
       </div>
     );
-  } else {
-    return null;
   }
+  return null;
 }
 
 export default App;
