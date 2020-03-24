@@ -1,7 +1,7 @@
 {
   "files": {
-    "data.js": "/2019-ncov/static/js/data.7c879bae.chunk.js",
-    "data.js.map": "/2019-ncov/static/js/data.7c879bae.chunk.js.map",
+    "data.js": "/2019-ncov/static/js/data.ae7c24aa.chunk.js",
+    "data.js.map": "/2019-ncov/static/js/data.ae7c24aa.chunk.js.map",
     "main.css": "/2019-ncov/static/css/main.3f562034.chunk.css",
     "main.js": "/2019-ncov/static/js/main.06ace79b.chunk.js",
     "main.js.map": "/2019-ncov/static/js/main.06ace79b.chunk.js.map",
@@ -14,7 +14,7 @@
     "static/js/5.22b490af.chunk.js": "/2019-ncov/static/js/5.22b490af.chunk.js",
     "static/js/5.22b490af.chunk.js.map": "/2019-ncov/static/js/5.22b490af.chunk.js.map",
     "index.html": "/2019-ncov/index.html",
-    "precache-manifest.5fc92f5365db4a8e9712826079cbb370.js": "/2019-ncov/precache-manifest.5fc92f5365db4a8e9712826079cbb370.js",
+    "precache-manifest.e7e335778d389428ffb7e83606e58c84.js": "/2019-ncov/precache-manifest.e7e335778d389428ffb7e83606e58c84.js",
     "service-worker.js": "/2019-ncov/service-worker.js",
     "static/css/main.3f562034.chunk.css.map": "/2019-ncov/static/css/main.3f562034.chunk.css.map",
     "static/js/main.06ace79b.chunk.js.LICENSE": "/2019-ncov/static/js/main.06ace79b.chunk.js.LICENSE",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.91d28e27.js",
-    "static/js/data.7c879bae.chunk.js",
+    "static/js/data.ae7c24aa.chunk.js",
     "static/js/react.63a2b585.chunk.js",
     "static/css/main.3f562034.chunk.css",
     "static/js/main.06ace79b.chunk.js"
