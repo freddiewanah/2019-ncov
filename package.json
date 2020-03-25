@@ -95,7 +95,7 @@
     "workbox-webpack-plugin": "4.3.1",
     "xmlhttprequest": "^1.8.0"
   },
-  "homepage": "https://freddiewanah.github.io/2019-ncov/",
+  "homepage": "https://freddiewanah.github.io/",
   "scripts": {
     "analyze": "ANALYZE=1 npm run build",
     "start": "node scripts/start.js",
