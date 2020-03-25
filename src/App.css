@@ -12,7 +12,6 @@ header i {
   color: #888;
   font-weight: 400;
   padding-left: 1rem;
-  padding-top: 0.7rem;
 }
 
 .title {
@@ -39,13 +38,11 @@ header i {
   padding-right: 1rem;
 }
 
-.flightInfo,
 .province {
   display: flex;
   text-align: center;
 }
 
-.flightInfo
 .province.header > div {
   color: #000000;
 }
@@ -54,7 +51,6 @@ header i {
 .confirmed,
 .death,
 .cured,
-.flightArea,
 .tested{
   border: 1px solid #fff;
   background-color: #f8f8f8;
@@ -64,13 +60,6 @@ header i {
 }
 
 .area {
-  flex: 1;
-  padding: 0.4rem 0;
-  position: relative;
-  color: #212f3d;
-}
-.flightArea {
-  font-size: 90%;
   flex: 3;
   padding: 0.4rem 0;
   position: relative;
@@ -95,9 +84,8 @@ header i {
 
 .area.header {
   background-color: #d5d8dc;
-  font-size: 90%;
+  /*font-size: 80%;*/
 }
-
 
 .confirmed,
 .death,
@@ -105,26 +93,17 @@ header i {
 .tested
 {
   padding: 0.3rem 0;
-  flex: 1;
-    width: 0;
+  flex: 2;
 }
 
 .confirmed {
   color: #e74c3c;
-    flex:1.3;
 }
 
 .confirmed.header {
   background-color: #fadbd8;
-  /*font-size: 80%;*/
+  font-size: 80%;
 }
-
-.confirmedtitle {
-  color: #5d1212 !important ;
-  font-size: 90% !important;
-  font-weight: 500;
-}
-
 .cured {
   color: #00b321;
 }
@@ -132,12 +111,6 @@ header i {
 .cured.header {
   background-color: #d5f5e3;
   font-size: 80%;
-}
-
-.recoveredtitle {
-  color: #002a00 !important ;
-  font-size: 90% !important;
-  font-weight: 500;
 }
 
 .tested {
@@ -149,12 +122,6 @@ header i {
   font-size: 80%;
 }
 
-.testedtitle {
-  color: #332533 !important ;
-  font-size: 90% !important;
-  font-weight: 500;
-}
-
 .death {
   color: #a93226;
 }
@@ -162,17 +129,6 @@ header i {
 .death.header {
   background-color: #e6b0aa;
   font-size: 80%;
-}
-
-.deathtitle {
-  color: #332533 !important ;
-  font-size: 90% !important;
-  font-weight: 500;
-}
-
-.statetitle {
-  font-size: 100% !important;
-  font-weight: 500;
 }
 
 .fallback {
@@ -239,212 +195,4 @@ h2 small {
   font-weight: 400;
   padding: 5px;
   border-radius: 2px;
-}
-
-.imageContainer {
-    width: 480px;
-    height: 675px;
-}
-
-.formatImage {
-    width: 100%;
-}
-
-.centerMedia {
-    margin: 2rem 1rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.formatTable {
-    color: black;
-}
-
-@media (max-width: 700px) {
-
-    .formatMedia {
-        width: 426px !important;
-        height: 240px !important;
-        justify-content: center;
-    }
-
-    .formatTable {
-        font-size: small;
-    }
-
-    .imageContainer {
-        width: 360px;
-        height: 506px;
-    }
-}
-
-@media (max-width: 440px) {
-    .formatMedia {
-        width: 319px !important;
-        height: 180px !important;
-        justify-content: center;
-    }
-
-    .responsiveH2 {
-        font-size: large;
-        font-weight: 800;
-    }
-
-    .responsiveH3 {
-        font-size: medium;
-        font-weight: 800;
-    }
-
-    .responsiveText {
-        font-size: small;
-    }
-
-    .pagination {
-        font-size: xx-small;
-    }
-
-    .formatTable {
-        font-size: x-small;
-    }
-
-    .imageContainer {
-        width: 240px;
-        height: 337px;
-    }
-
-    .mediaText {
-        font-size: x-small;
-    }
-}
-
-@media (max-width: 330px) {
-    .formatMedia {
-        width: 284px !important;
-        height: 160px !important;
-        justify-content: center;
-    }
-
-    .formatTable {
-        font-size: xx-small;
-    }
-
-    .imageContainer {
-        width: 160px;
-        height: 225px;
-    }
-
-    .mediaText {
-        font-size: xx-small;
-    }
-}
-
-.removePadding {
-    padding: 0 !important;
-}
-
-.navBar {
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-}
-
-.navBarStuck {
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(186, 217, 229);
-    color: black;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-}
-
-.sticky-wrapper {
-    position: relative;
-    height: 34px;
-}
-
-.sticky .sticky-inner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.navItems {
-    margin: 0.5rem 0 0 0;
-    padding: 0 8px;
-    border-bottom: transparent solid 2px;
-}
-
-.navItems:hover {
-    cursor: pointer;
-}
-
-.navCurrentPage {
-    border-bottom: #87CEEB solid 2px;
-    color: #87CEEB;
-}
-
-.navCurrentPageSticky {
-    border-bottom: black solid 2px;
-    color: black;
-}
-
-.citationLink {
-    color: blue;
-    border-bottom: blue 1px solid;
-}
-
-.flightSearch {
-    width: 98%;
-    border-width: 2.5px;
-    border-color: rgb(186, 217, 229);
-    margin-bottom: 15px;
-}
-
-.tableRows {
-    border: 1px solid #87CEEB;
-}
-
-.tableRows:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.tableData {
-    border-right: 1px solid #87CEEB;
-}
-
-.customStateSelect {
-    border-radius: 4px;
-    border: 2px solid #87CEEB;
-    background-color: white;
-}
-
-.buttonStyles {
-    background-color: white;
-    color: black;
-    border: 2px solid #87CEEB;
-    transition-duration: 0.4s;
-    border-radius: 4px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 1px;
-}
-
-.buttonStyles:hover {
-    background-color: #87CEEB;
-    color: white;
-}
-
-.pagination {
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.alignStyles {
-    margin: 0;
-    padding: 1em;
 }
