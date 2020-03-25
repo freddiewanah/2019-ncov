@@ -32,7 +32,7 @@ jobs:
     - name: npm run build
       env:
         REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
-      run: npm run build&&cp config/google3413bf25c03a27c3.html build/
+      run: npm run build
     - name: deploy to master branch
       uses: JamesIves/github-pages-deploy-action@releases/v3
       env:
