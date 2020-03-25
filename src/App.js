@@ -451,13 +451,14 @@ function Area({ area, onChange, data }) {
     stateData[
     Object.keys(stateData)[Object.keys(stateData).length - 1]
     ];
-
+  console.log(lastTotal)
+    console.log(stateData)
   const renderArea = () => {
     let latest =
       testedCases[
       Object.keys(testedCases)[Object.keys(testedCases).length - 1]
       ];
-
+      console.log(data)
     return data.map(x => (
       <div className="province" key={uuid()}>
         {/*<div className={`area ${x.name ? 'active' : ''}`}>*/}
