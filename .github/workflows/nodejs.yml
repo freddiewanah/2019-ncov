@@ -25,16 +25,16 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - name: npm install
-      run: npm ci
-    - name: build data
-      env:
-        REACT_APP_DRIVE_KEY: ${{secrets.DRIVE_TOKEN}}
-      run: node scripts/google-drive-download.js
-    - name: npm run build
-      env:
-        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
-      run: npm run build&&cp config/google3413bf25c03a27c3.html build/
+#    - name: npm install
+#      run: npm ci
+#    - name: build data
+#      env:
+#        REACT_APP_DRIVE_KEY: ${{secrets.DRIVE_TOKEN}}
+#      run: node scripts/google-drive-download.js
+#    - name: npm run build
+#      env:
+#        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
+#      run: npm run build&&cp config/google3413bf25c03a27c3.html build/
 #    - name: sycn with s3
 #      uses: jakejarvis/s3-sync-action@master
 #      with:
@@ -46,11 +46,11 @@ jobs:
 #        AWS_REGION: 'ap-southeast-2'   # optional: defaults to us-east-1
 #        SOURCE_DIR: 'build'      # optional: defaults to entire repository
 #        DEST_DIR: 'public'
-#    - name: deploy to master branch
-#      uses: JamesIves/github-pages-deploy-action@releases/v3
-#      env:
-#        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
-#      with:
-#        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-#        BRANCH: master # The branch the action should deploy to.
-#        FOLDER: build # The folder the action should deploy.
+    - name: deploy to master branch
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      env:
+        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: ghPage # The folder the action should deploy.
