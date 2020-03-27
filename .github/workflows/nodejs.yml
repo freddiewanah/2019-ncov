@@ -7,8 +7,8 @@ on:
   push:
     branches:
       - prod
-  schedule:
-    - cron:  '0 19-23,0-14 * * *'
+#  schedule:
+#    - cron:  '0 19-23,0-14 * * *'
 
 
 jobs:
@@ -46,11 +46,11 @@ jobs:
 #        AWS_REGION: 'ap-southeast-2'   # optional: defaults to us-east-1
 #        SOURCE_DIR: 'build'      # optional: defaults to entire repository
 #        DEST_DIR: 'public'
-    - name: deploy to master branch
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      env:
-        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: master # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
+#    - name: deploy to master branch
+#      uses: JamesIves/github-pages-deploy-action@releases/v3
+#      env:
+#        REACT_APP_MAP_API: ${{ secrets.MAPBOX_TOKEN }}
+#      with:
+#        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#        BRANCH: master # The branch the action should deploy to.
+#        FOLDER: build # The folder the action should deploy.
