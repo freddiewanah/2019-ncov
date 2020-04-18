@@ -53,7 +53,7 @@
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.8,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -76,12 +76,12 @@
                 "enable": true,
                 "distance": 150,
                 "color": "#ffffff",
-                "opacity": 0.4,
+                "opacity": 0.7,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 3,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -156,5 +156,6 @@
         requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
+
 })(jQuery); // End of use strict
 
